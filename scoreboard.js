@@ -1,6 +1,6 @@
 var myApp = angular.module("7wc", []);
 myApp.controller("scoreboard", function($scope) {
-        $scope.scoreRows = ["war", "money","wonders", "building", "trade", "guides", "science"];
+        $scope.scoreRows = ["war", "money","wonders", "building", "trade", "guides", "science", "black", "leaders"];
         $scope.scoreNames = {
                 "war":"Война",
                 "money":"Пари",
@@ -8,7 +8,9 @@ myApp.controller("scoreboard", function($scope) {
                 "building":"Сгради",
                 "trade":"Търговия",
                 "guides":"Гилдии",
-                "science":"Наука"
+                "science":"Наука",
+                "black":"Черни",
+                "leaders":"Лидери"
         };
         $scope.players= [];
         var total = function() {
